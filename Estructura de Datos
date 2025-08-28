@@ -1,0 +1,449 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyN92CIMvBxRao5u1tptqcX4",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/dlopezcaro/UnicafamProgramacionAvanzada2025/blob/main/Estructura%20de%20Datos\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "2i05Nzc05uQi"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "V6O0t9Jc5vRH"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Estructura de dato **\n",
+        "\n",
+        "Programacion Avanzada\n",
+        "\n",
+        "Ingenieria Industrial\n",
+        "\n",
+        "Facultad de Ingenieria\n",
+        "\n",
+        "Unicafam\n",
+        "\n",
+        "Docente: Nicolas Mojica\n",
+        "\n",
+        "Estudiante: Didier Lopez Caro\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Yc6g122GUYoR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Listas"
+      ],
+      "metadata": {
+        "id": "kDHpwMAP7CjN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Crear lista vacia\n",
+        "mi_lista=[]\n",
+        "\n",
+        "#Crear una lista con elementos\n",
+        "mi_lista=[1,2,3,\"vaca\",5.0]"
+      ],
+      "metadata": {
+        "id": "NsShh7t-57QV"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mi_lista = [10, 20, 30, 40, 50]\n",
+        "#acceder al 30\n",
+        "print(mi_lista[2])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ORwsdXCK8D8K",
+        "outputId": "b4fd28cf-b5ff-4758-c9c9-5a72ecdc39bc"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#acceder al 10\n",
+        "print(mi_lista[0])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NhFRmd057NSV",
+        "outputId": "857ed610-7939-4dbf-cfc1-84573123ba22"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#conocer la posicion del elemento en la lista apartir de su valor\n",
+        "print(mi_lista.index(50))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jfcBZBbA9XFR",
+        "outputId": "0806523b-4295-498f-fa62-c1772cd0005f"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#diseñe un programa de actualizacion de datos que le permita al usuario modificar su nombre en la lista siempre y cuando exista en la lista\n",
+        "mi_lista1=[\"didier\",\"manuel\",\"jhon\",\"duvan\"]\n",
+        "\n",
+        "print(\"---------PROGRAMA ACTUALIZACION DE DATOS------\")\n",
+        "nombre_buscar=input(\"ingrese nombre a buscar: \")\n",
+        "if nombre_buscar in mi_lista1:\n",
+        "  pos=mi_lista1.index(nombre_buscar)\n",
+        "  mi_lista1[pos]=input(\"ingrese nuevo nombre: \")\n",
+        "  print(mi_lista1)\n",
+        "else:\n",
+        "  print(\"su nombre no esta en la lista\")\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_caLw-1B-A83",
+        "outputId": "39d4aa47-a11e-401a-a8e6-6762223fe2fc"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "---------PROGRAMA ACTUALIZACION DE DATOS------\n",
+            "ingrese nombre a buscar: didier\n",
+            "ingrese nuevo nombre: jose\n",
+            "['jose', 'manuel', 'jhon', 'duvan']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Mensaje de bienvenida\n",
+        "print(\"---------PROGRAMA ACTUALIZACION DE DATOS------\")\n",
+        "\n",
+        "#Preguntar al usuario que nombre quiere buscar\n",
+        "nombre_buscar=input(\"ingrese nombre a buscar: \")\n",
+        "\n",
+        "#Definicion de la condicional\n",
+        "#Si el nombre del usuario existe en la lista\n",
+        "if nombre_buscar in mi_lista1:\n",
+        "\n",
+        "  #Encuentra la posicion o el indice del nombre que ingreso el usuario dentro de la lista\n",
+        "  pos=mi_lista1.index(nombre_buscar)\n",
+        "\n",
+        "  #Actualizo la posicion dentro de la lista con el nombre que me indique el usuario\n",
+        "  mi_lista1[pos]=input(\"ingrese nuevo nombre: \")\n",
+        "\n",
+        "  #Imprimo la lista actualizada\n",
+        "  print(mi_lista1)\n",
+        "else:\n",
+        "  #En caso que el nombre que ingreso el usuario no exista le muestro el siguiente mensaje\n",
+        "  print(\"su nombre no esta en la lista\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cW6rJNuQBS2P",
+        "outputId": "1c7d58b4-681a-4f54-dd6d-1a97dd83b87b"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "---------PROGRAMA ACTUALIZACION DE DATOS------\n",
+            "ingrese nombre a buscar: didier\n",
+            "su nombre no esta en la lista\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# metodos en las listas\n",
+        "# actualizacion de datos en una lista\n",
+        "mi_lista = [10, 20, 30, 40, 50]\n",
+        "\n",
+        "#Cambiar elemento de una lista\n",
+        "#Llamar a la lista, determinar del elemento a cambiar y establecer el nuevo valor\n",
+        "\n",
+        "#Cambiar el 40 por 1,5\n",
+        "mi_lista[3]=1.5\n",
+        "print(mi_lista)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eLegPuIkDZXO",
+        "outputId": "bc646038-3d2a-4526-cdcb-d03a64c9a4a7"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10, 20, 30, 1.5, 50]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# cambiar el 50 por voy a pasar el parcial con 5\n",
+        "mi_lista = [10, 20, 30, 40, 50]\n",
+        "\n",
+        "mi_lista[4]=\"voy a pasar el parcial con 5\"\n",
+        "print(mi_lista)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "p8HxDYMRFKhy",
+        "outputId": "617caf6e-067a-4286-99d9-06cfd723d84b"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10, 20, 30, 40, 'voy a pasar el parcial con 5']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# agregar elementos a la lista\n",
+        "mi_lista.append(60)\n",
+        "print(mi_lista)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GA741C3KGXcE",
+        "outputId": "d3615a15-6b3d-4f85-9f59-16fbea4b38aa"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10, 20, 30, 40, 'voy a pasar el parcial con 5', 60]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# agregar elemento a la lista en una posicion especifica\n",
+        "mi_lista.insert(1,15)\n",
+        "print(mi_lista)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Vz1A2bedHLNi",
+        "outputId": "ffc26bbc-359c-4351-ede4-bbf3c2de313e"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10, 15, 15, 20, 30, 40, 'voy a pasar el parcial con 5', 60]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Eliminar un elemento de una lista\n",
+        "del mi_lista[5]\n",
+        "print(mi_lista)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1z1-MQ3HHfQE",
+        "outputId": "21cc0293-296d-4653-860f-2c47f094caff"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10, 15, 15, 20, 30, 'voy a pasar el parcial con 5', 60]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#diseñe un programa de actualizacion de datos que le permita al usuario modificar su nombre en la lista siempre y cuando exista en la lista\n",
+        "mi_lista1=[\"didier\",\"manuel\",\"jhon\",\"duvan\"]\n",
+        "\n",
+        "#Mensaje de bienvenida\n",
+        "print(\"---------PROGRAMA ACTUALIZACION DE DATOS------\")\n",
+        "\n",
+        "#Preguntar al usuario que nombre quiere buscar\n",
+        "nombre_buscar=input(\"ingrese nombre a buscar: \")\n",
+        "\n",
+        "#Definicion de la condicional\n",
+        "#Si el nombre del usuario existe en la lista\n",
+        "if nombre_buscar in mi_lista1:\n",
+        "\n",
+        "  #Encuentra la posicion o el indice del nombre que ingreso el usuario dentro de la lista\n",
+        "  pos=mi_lista1.index(nombre_buscar)\n",
+        "\n",
+        "  #Actualizo la posicion dentro de la lista con el nombre que me indique el usuario\n",
+        "  mi_lista1[pos]=input(\"ingrese nuevo nombre: \")\n",
+        "\n",
+        "  #Imprimo la lista actualizada\n",
+        "  print(mi_lista1)\n",
+        "else:\n",
+        "  #En caso que el nombre que ingreso el usuario no exista le muestro el siguiente mensaje\n",
+        "  print(\"su nombre no esta en la lista,agregue\")\n",
+        "  nombre_nuevo=mi_lista.append(input(\"ingrese nuevo nombre: \"))\n",
+        "  # la f permite ocupar variables y valores streem dentro de un print\n",
+        "  print(f\"felicidades,su nombre a sido registrado exitosamente:{nombre_nuevo}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "y1ZUS3uEH0an",
+        "outputId": "2c038b61-5fd5-4784-9517-0f268a038137"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "---------PROGRAMA ACTUALIZACION DE DATOS------\n",
+            "ingrese nombre a buscar: didier\n",
+            "ingrese nuevo nombre: jose\n",
+            "['jose', 'manuel', 'jhon', 'duvan']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "lglSl6XRKvHU"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
